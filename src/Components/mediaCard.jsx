@@ -15,7 +15,8 @@ const useStyles = makeStyles({
     minWidth: 580
   },
   media: {
-    height: 140
+    height: 250,
+    width: "auto"
   }
 });
 
@@ -35,7 +36,7 @@ export default function MediaCard(props) {
     <>
       <Card className={classes.root}>
         <CardActionArea>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6" component="h4">
             {title.toUpperCase()}
           </Typography>
           <CardMedia className={classes.media} image={image} />
